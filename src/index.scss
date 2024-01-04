@@ -1,0 +1,103 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('./fonts/Roboto-Regular.ttf') format('truetype');
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  max-width: 960px;
+  margin: 1rem auto;
+  background: url(assets/summer-bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+h1 {
+  text-align: center;
+  color: rgb(230, 107, 25);
+  font-size: 3rem;
+}
+
+.buttons {
+  display: flex;
+  width: 70%;
+  margin: 1rem auto;
+  gap: 10px;
+}
+
+button {
+  width: 200px;
+  height: 200px;
+  margin: 0.5rem auto;
+  padding: 0.5rem;
+  border: 2px solid rgb(207, 190, 190);
+  border-radius: 20px;
+}
+
+button:hover {
+  opacity: 0.75;
+  cursor: pointer;
+  transform: translateY(-2px);
+}
+
+button:active {
+  opacity: 0.5;
+  border: 2px solid green;
+  color: green;
+}
+
+#sun-button {
+  background: url(assets/summer-bg.jpg);
+  background-size: cover;
+}
+
+#rain-button {
+  background: url(assets/rainy-bg.jpg);
+  background-size: cover;
+}
+
+#snow-button {
+  background: url(assets/winter-bg.jpg);
+  background-size: cover;
+}
+
+button.active {
+  border: 2px solid red;
+}
+
+.slider {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 140px;
+}
+
+#sun {
+  margin: auto;
+  width: 50px;
+  height: 50px;
+  background: url(assets/icons/sun.svg);
+  background-size: cover;
+}
+
+#rain {
+  margin: auto;
+  width: 50px;
+  height: 50px;
+  background: url(assets/icons/cloud-rain.svg);
+  background-size: cover;
+}
+
+#snow {
+  margin: auto;
+  width: 50px;
+  height: 50px;
+  background: url(assets/icons/cloud-snow.svg);
+  background-size: cover;
+}
