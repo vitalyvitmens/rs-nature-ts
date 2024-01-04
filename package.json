@@ -5,8 +5,8 @@
   "private": true,
   "scripts": {
     "start": "npx webpack serve --config webpack.config.dev.js",
-    "build": "npx webpack --config webpack.config.prod.js && tsc",
-    "build:dev": "npx webpack --config webpack.config.dev.js && tsc",
+    "build": "npx webpack --config webpack.config.prod.js",
+    "build:dev": "npx webpack --config webpack.config.dev.js",
     "deploy": "gh-pages -d dist"
   },
   "keywords": [
